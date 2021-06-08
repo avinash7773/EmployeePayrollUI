@@ -157,7 +157,7 @@
             <textarea id="notes" class="input" name="Notes" placeholder="write something.." style="height: 100px"></textarea>
         </div>
         <div class="button-parent">
-            <a href="./home.html" class="resetButton button cancelButton"
+            <a class="resetButton button cancelButton"
               >Cancel</a>
         <div class="submit-reset">
               <button type="submit" class="button submitButton" id="submitButton">Submit</button>
@@ -166,5 +166,17 @@
         </div>
         </form>
     </div>
+
+    <!-- UC 8 -->
+    <script>
+        const salary = document.querySelector("#salary");
+        const salaryOutput = document.querySelector(".salary-output-text");
+  
+        salaryOutput.textContent = salary.value;
+  
+        salary.addEventListener("input", function () {
+          salaryOutput.textContent = salary.value;
+        });
+      </script>
  </body>
 </html>
