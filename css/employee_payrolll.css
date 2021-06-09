@@ -162,6 +162,12 @@ select {
     border: 1px solid rgba(92, 89, 89, 0.514);
   }
 
+  error-output {
+    font-size: 18px;
+    color: red;
+    margin-left: 10px;
+}
+
   @media only screen and (max-width: 960px) {
     .cancelButton {
       margin-left: 0px;

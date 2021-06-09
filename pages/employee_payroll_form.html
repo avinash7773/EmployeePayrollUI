@@ -24,16 +24,10 @@
             </div>
             <div class="row-content">
                 <label for="name" class="label text">Name</label>
-            <input
-              type="text"
-              class="input"
-              id="name"
-              name="name"
-              placeholder="your name.."
-              required
-            >
-          </div>
-          
+                <input type="text" class="input" id="name" name="name" placeholder="your name.." required>
+                <error-output class="text-error" for="name"></error-output>
+            </div>
+      
 <!-- UC-3 -->
         <div class="row-content">
             <label class="label text" for="profile">Profile image</label>
@@ -164,8 +158,8 @@
               <button type="reset" class="resetButton button">Reset</button>
         </div>
         </div>
-        </form>
-    </div>
+    </form>
+  </div>
 
     <!-- UC 8 -->
     <script>
@@ -177,6 +171,7 @@
         salary.addEventListener("input", function () {
           salaryOutput.textContent = salary.value;
         });
-      </script>
- </body>
+    </script>
+    <script defer src="../js/employee_payroll.js"></script>
+  </body>
 </html>
