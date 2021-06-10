@@ -25,7 +25,7 @@
             <div class="row-content">
                 <label for="name" class="label text">Name</label>
                 <input type="text" class="input" id="name" name="name" placeholder="your name.." required>
-                <error-output class="text-error" for="text"></error-output>
+                <error-output class="text-error" for="name"></error-output>
             </div>
       
  <!-- UC-3 -->
@@ -79,7 +79,7 @@
           <div class="row-content">
             <label class="label text" for="salary">Choose your salary: </label>
             <input type="range" class="input" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
-            <output class="salary-output-text" for="salary">400000</output>
+            <output class="salary-output" for="salary">400000</output>
           </div>
 
 
@@ -162,7 +162,7 @@
   </div>
 
     <!-- UC 8 -->
-    <script>
+    <!-- <script>
         const salary = document.querySelector("#salary");
         const salaryOutput = document.querySelector(".salary-output-text");
   
@@ -171,7 +171,7 @@
         salary.addEventListener("input", function () {
           salaryOutput.textContent = salary.value;
         });
-    </script>
+    </script> -->
     <script src="../js/add.js"></script>
     <script src = "../js/employee_payroll.js"></script>
   </body>
