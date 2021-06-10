@@ -17,18 +17,18 @@
         </div>
     </header>
     <!-- UC-2 -->
-    <div class="form-content">
-        <form class="form" action="#" onsubmit="save(); return false">
+    <div id = "formId" class="form-content">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
             <div class = "form-head">
                 Employee Payroll form
             </div>
             <div class="row-content">
                 <label for="name" class="label text">Name</label>
                 <input type="text" class="input" id="name" name="name" placeholder="your name.." required>
-                <error-output class="text-error" for="name"></error-output>
+                <error-output class="text-error" for="text"></error-output>
             </div>
       
-<!-- UC-3 -->
+ <!-- UC-3 -->
         <div class="row-content">
             <label class="label text" for="profile">Profile image</label>
             <div class="profile-radio-content">
@@ -172,6 +172,7 @@
           salaryOutput.textContent = salary.value;
         });
     </script>
-    <script defer src="../js/employee_payroll.js"></script>
+    <script src="../js/add.js"></script>
+    <script src = "../js/employee_payroll.js"></script>
   </body>
 </html>
